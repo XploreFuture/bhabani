@@ -433,12 +433,6 @@ document.getElementById('courseTable').getElementsByTagName('tbody')[0].innerHTM
             var courseName = document.getElementById("courseName").value;
             var courseFee = parseFloat(document.getElementById("courseFee").value);
 
-            // Validate input
-            if (courseName.trim() === "" || isNaN(courseFee) || courseFee <= 0) {
-                alert("Please enter valid course name and fee.");
-                return;
-            }
-
             // Create new row in the table
             var table = document.getElementById("courseTable").getElementsByTagName('tbody')[0];
             var newRow = table.insertRow(table.rows.length);
